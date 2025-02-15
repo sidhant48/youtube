@@ -1,12 +1,8 @@
-export const GOOGLE_API_KEY = "AIzaSyDRfGEmf6zhmGyyh9El8V3eIYnCqKbMjdg";
+export const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
-export const LIVE_CHAT_COUNT = 25;
+export const LIVE_CHAT_COUNT = process.env.REACT_APP_LIVE_CHAT_COUNT;
 
 export const YOUTUBE_VIDEOS_API =
-  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&chart=mostPopular&regionCode=US&key=" +
-  GOOGLE_API_KEY;
+  process.env.REACT_APP_YOUTUBE_VIDEOS_API + GOOGLE_API_KEY;
 
-export const YOUTUBE_SEARCH_API =
-  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
-
-// Live Chat >>>> Infinite Scroll >>>>>> Pagination
+export const YOUTUBE_SEARCH_API = process.env.REACT_APP_YOUTUBE_SEARCH_API;
